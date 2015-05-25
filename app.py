@@ -5,7 +5,11 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    return 'Welcome HemphiKid friends. Watch for our Minecraft Server coming soon!'
+    message = ("<h1>Welcome HemphiKid Friends!</h1></ br>"
+               "We are building our own Minecraft server!</ br>"
+               "Keep watching here because it is coming soon!</ br>")
+    return message
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", debug=True)
+
